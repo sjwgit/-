@@ -1,0 +1,109 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <% String path= request.getContextPath();
+       System.out.print(path);
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <link rel="stylesheet" href="screenshots/css/style.css">
+ <link rel="stylesheet" href="screenshots/css/admin-aside-bar.css">
+<script type="text/javascript" src="screenshots/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="screenshots/js/admin-aside-bar.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+</script>
+           <header id="admin-top">
+           </header>
+            <aside>
+		          <div> 
+					   <ul>
+						    <li id="l1" title="1">
+								<span>系统属性</span>
+							
+						   </li>
+						    <div id="xt-menu" title="1">
+								<div id="div2" onclick="xt(event)">
+								  <span id="sapn1">系统属性</span>
+								</div>
+							</div>
+							<li>
+						       <span>密码管理</span>
+						    </li>
+						     <div class="yh-menu">
+								 <div id="div2" onclick="pass(event)">
+								   <span>修改密码</span>
+								 </div>
+						    </div>
+						    <li id="l2">
+								<span>用户管理</span>
+							</li>
+						     <div class="yh-menu">
+								  <div id="div2" onclick="customer(event)">
+								   <span>用户管理</span>
+								 </div>
+						         
+						     </div>
+						   <!--  <li>
+								<span>商品类别</span>
+									
+							</li>
+						     <div class="yh-menu">
+								  <div id="div2">
+								   <span>类别管理</span>
+								 </div>
+								 <div id="div2">
+								   <span>类别添加</span>
+								 </div>
+						         
+						     </div> -->
+						    <li>
+								<span>商品管理</span>
+						   </li>
+						    <div class="yh-menu">
+								  <div id="div2" onclick="goodsManage(event)">
+								   <span>商品管理</span>
+								 </div>
+								 <div id="div2" onclick="goodsAdd(event)">
+								   <span>添加商品</span>
+								 </div>
+						         
+						     </div>
+						    <li>
+								<span>订单管理</span>
+						   </li>
+						   <div class="yh-menu">
+								  <div id="div2">
+								   <span>订单管理</span>
+								 </div>
+						     </div>
+						 <!--    <li>
+								<span>留言管理</span>
+						   </li>
+						   <div class="yh-menu">
+								  <div id="div2">
+								   <span>留言管理</span>
+								 </div>
+						     </div> -->
+						    <li>
+								<span>退出系统</span>
+						   </li>
+						   <div class="yh-menu">
+								  <div id="div2">
+								   <span>安全退出</span>
+								 </div>
+						     </div>
+					  </ul>
+			   
+			   
+			    </div>
+		   </aside>
+		   <div class="aside-right">
+		    
+		   </div>
+		 
+</body>
+</html>

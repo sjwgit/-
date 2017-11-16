@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <%
+     String path= request.getContextPath();
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="<%=path %>/screenshots/css/reset.css">
+<link rel="stylesheet" href="<%=path %>/screenshots/css/style2.css">
+<script type="text/javascript" src="<%=path %>/screenshots/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="<%=path %>/screenshots/js/easySlider.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<div id="slider">
+	<ul class="slides clearfix">
+		<li>
+		  <ul id="a">
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+			</ul>
+		</li>
+		<li>
+		  <ul id="a">
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+			</ul>
+		</li>
+		<li>
+		  <ul id="a">
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+			</ul>
+		</li>
+		<li>
+		  <ul id="a">
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+		<li><img class="responsive" src="<%=path %>/screenshots/pictures/fengkuangqianggou/1.jpg"></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="controls">
+		<li><img  alt="previous" src="<%=path %>/screenshots/pictures/prev.png"></li>
+		<li><img  alt="next" src="<%=path %>/screenshots/pictures/next.png"></li>
+	</ul>
+	
+	<ol class="">
+	  <li class=""></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+</div>
+
+
+<script type="text/javascript">
+	$(function() {
+		$("#slider").easySlider( {
+							
+		});
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=ssh_1/src&lt;com.neusoft.model{UserInfo.java[UserInfo" modifiers="1" timestamp="1508292742060"/>
+<typeInfo handle="=ssh_1/src&lt;com.nesoft.dao{BaseDao.java[BaseDao" modifiers="1" timestamp="1507773711716"/>
+<typeInfo handle="=ssh_1/src&lt;com.neusoft.inter{ManageInter.java[ManageInter" modifiers="513" timestamp="1510192854231"/>
+<typeInfo handle="=ssh_1/src&lt;com.nesoft.dao{ManageDao.java[ManageDao" modifiers="1" timestamp="1510192975745"/>
+<typeInfo handle="=ssh_1/src&lt;com.nesoft.service{ManageService.java[ManageService" modifiers="1" timestamp="1510193030151"/>
+<typeInfo handle="=ssh_1/src&lt;com.neusoft.action{ManageAction.java[ManageAction" modifiers="1" timestamp="1510192608903"/>
+<typeInfo handle="=ssh_1/src&lt;com.neusoft.action{GoodsAction.java[GoodsAction" modifiers="1" timestamp="1510193156635"/>
+<typeInfo handle="=ssh_1/src&lt;com.neusoft.action{UploadAction.java[UploadAction" modifiers="1" timestamp="1510579066265"/>
+<typeInfo handle="=ssh_1/src&lt;com.neusoft.action{StudentAction.java[StudentAction" modifiers="1" timestamp="1509442933458"/>
+</typeInfoHistroy>

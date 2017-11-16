@@ -1,0 +1,33 @@
+input{
+	float:left;
+}
+#error-pass{
+	float:left;
+	color:red;
+}
+#new-pass{
+	float:left;
+	color:red;
+}
+table{
+	width:85%;
+	height: 50%;
+	border-width: 1px;
+}
+#td1{
+	width:20%;
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+}
+#td2{
+	width:80%;
+	height: 50px;
+}
+#but1{
+	margin-left:300px;
+}
+#reset{
+	margin-left:50px;
+}
+

@@ -1,0 +1,72 @@
+#reg_reset{
+	position: absolute;
+    margin-top: -26px;
+    margin-left: -10%;
+}
+#reg_sub{
+	float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.type_div{
+	position: absolute;
+    margin-left: 56%;
+    color: red;
+    margin-top: 54px;
+    font-size: small;
+    font-weight: 400;
+    font-style: italic;
+    
+}
+.errorMessage{
+	color: red;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 5px;
+}
+#form-position{
+	margin-top:20%;
+}
+#pw{
+	padding-top:10px;
+	margin-top: 10px;
+}
+#username{
+	padding-top:10px;
+	margin-top:10px;
+}
+#login{
+	width:80px;
+	height:30px;
+	float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#register{
+	width:80px;
+	height:30px;
+	margin-top:-32px;
+}
+#div1{
+	color: red;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

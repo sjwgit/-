@@ -1,0 +1,14 @@
+#formcss{
+	width: 85%;
+	height: 50%;
+    margin-left: 20%;
+    margin-top: 10%;
+	
+}
+#tablecss{
+	margin-left: 30%;
+	
+}
+input{
+	width:300px;
+}

@@ -1,0 +1,64 @@
+package com.neusoft.action;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+import org.apache.struts2.interceptor.RequestAware;
+
+import com.nesoft.service.ManageService;
+import com.neusoft.model.Goods;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+import com.opensymphony.xwork2.Preparable;
+
+public class GoodsAction extends ActionSupport implements Preparable,ModelDriven<Goods>,RequestAware{
+    private ManageService manageService;
+    private Map<String, Object> request;
+    private Goods goods;
+    public void setManageService(ManageService manageService) {
+		this.manageService = manageService;
+	}
+    public void prepareFindGoods(){
+		 goods = new Goods();
+	}
+   public String findGoods(){
+	   List<Goods> goodsList;
+	   goodsList =  manageService.findAll();
+	    request.put("goodsList", goodsList);
+   	return "success";
+   }
+   public String deleteGoods(){
+	   HttpServletRequest request2 = ServletActionContext.getRequest();
+	   String idstr = request2.getParameter("id");
+	   String name = request2.getParameter("name");
+	   String tableName = request2.getParameter("tableName");
+	   long id = Integer.parseInt(idstr);
+	   System.out.println(id+"---"+name+"----"+tableName);
+	  int result =  manageService.deleteGoods(id, name);
+	    if(result == 1){
+	    	 return "success";
+	    }else{
+	    	return "error";
+	    }
+   }
+	@Override
+	public void setRequest(Map<String, Object> arg0) {
+		// TODO Auto-generated method stub
+		this.request=arg0;
+	}
+
+	@Override
+	public Goods getModel() {
+		// TODO Auto-generated method stub
+		return goods;
+	}
+	@Override
+	public void prepare() throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

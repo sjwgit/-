@@ -1,0 +1,186 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <%
+     String path= request.getContextPath();
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="<%=path %>/screenshots/css/footer.css">
+<link rel="stylesheet" href="<%=path %>/screenshots/css/style.css">
+<script type="text/javascript" src="<%=path %>/screenshots/js/jquery-3.2.1.min.js"></script>
+<title>footer</title>
+</head>
+<body>
+     <footer class="footer">
+	           <div class="row1">
+		                 <div class="left">
+				              <img src="<%=path %>/screenshots/imgs/telphone.png" id="img1">
+				        </div>
+						 
+				     
+				      <div class="div_img left" >
+				         <span id="spanbig" class="color">400-617-9999</span>
+				     </div>
+				      <div class="div_img left">
+				        <span id="spanbig">客服热线9:00-23:00贴心服务</span>
+				     </div>
+				     <div class="left div_img" id="mg-left">
+				          <span>优惠促销早知道</span>
+				    </div>
+				   <div class="left" id="mg-input">
+				          <input type="text" class="input1" value="请输入您的邮箱地址" title="dfdfdfdf">
+				    </div>
+		      </div>
+		       <div class="row2">
+				     <hr style="width:90%;">
+		                  <div class="left">
+				               <div class="div1"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/1.png" class="img3" id="img2">
+								   </div>
+							        <div class="as">
+								      <span id="spansmall">新手入门</span>
+								   </div>
+								   
+							   </div>
+							    <div class="img3">
+							     <span>购物保障</span>
+							    </div>
+							    <div class="img3">
+							     <span>服务协议</span>
+							    </div>
+							   <div class="img3">
+							     <span>发票说明</span>
+							    </div>
+				          </div>
+		   
+		           
+				   
+				       <div class="left distance">
+				               <div class="div1"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/2.png" class="img3" id="img2">
+								   </div>
+							        <div class="as">
+								      <span id="spansmall">常见问题</span>
+								   </div>
+								   
+							   </div>
+							    <div class="img3">
+							     <span>红包使用</span>
+							    </div>
+							    <div class="img3">
+							     <span>返现使用</span>
+							    </div>
+							   <div class="img3">
+							     <span>兑换码</span>
+							    </div>
+				          </div>
+				   
+				   
+				        <div class="left distance">
+				               <div class="div1"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/3.png" class="img3" id="img2">
+								   </div>
+							        <div class="as">
+								      <span id="spansmall">配送说明</span>
+								   </div>
+								   
+							   </div>
+							    <div class="img3">
+							     <span>配送时间</span>
+							    </div>
+							    <div class="img3">
+							     <span>配送费用</span>
+							    </div>
+							   <div class="img3">
+							     <span>配送范围</span>
+							    </div>
+				          </div>
+				     <div class="left distance">
+				               <div class="div1"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/4.png" class="img3" id="img2">
+								   </div>
+							        <div class="as">
+								      <span id="spansmall">支付方式</span>
+								   </div>
+								   
+							   </div>
+							    <div class="img3">
+							     <span>货到付款</span>
+							    </div>
+							    <div class="img3">
+							     <span>在线支付</span>
+							    </div>
+							   <div class="img3">
+							     <span>线下支付</span>
+							    </div>
+				          </div>
+				     <div class="left distance">
+				               <div class="div1"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/5.png" class="img3" id="img2">
+								   </div>
+							        <div class="as">
+								      <span id="spansmall">售后服务</span>
+								   </div>
+								   
+							   </div>
+							    <div class="img3">
+							     <span>品质保证</span>
+							    </div>
+							    <div class="img3">
+							     <span>退换货政策</span>
+							    </div>
+							   <div class="img3">
+							     <span>退换货流程</span>
+							    </div>
+				          </div>
+				     <div class="left distance">
+				               <div class="div1"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/6.png" class="img3" id="img2">
+								   </div>
+							        <div class="as">
+								      <span id="spansmall">特色服务</span>
+								   </div>
+								   
+							   </div>
+							    <div class="img3">
+							     <span>会员俱乐部</span>
+							    </div>
+							    <div class="img3">
+							     <span>企业客户</span>
+							    </div>
+							   <div class="img3">
+							     <span>国酒社区</span>
+							    </div>
+				          </div>   
+				   
+				          <div class="left distance">
+				               <div class="div2"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/xinglang_logo.png" class="img3" id="img2">
+								   </div>
+							        <div class="as">
+								      <span>国酒新浪微博</span>
+								   </div>
+								   
+							   </div>
+							  <div class="div2"> 
+								    <div style="float: left;">
+								       <img src="<%=path %>/screenshots/imgs/weixing.png" class="img3" id="img2" alt="this is a pic">
+								   </div>
+							        <div class="as">
+								      <span>国酒微信</span>
+								   </div>  
+							   </div>
+				          </div>   	   
+		       </div>		   		       		        
+	  </footer>
+</body>
+</html>

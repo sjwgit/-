@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <%
+      String path= request.getContextPath();
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="<%=path %>/screenshots/css/style.css">
+  <link  rel="stylesheet" href="<%=path %>/screenshots/css/nav-bar.css">
+<script type="text/javascript" src="<%=path %>/screenshots/js/jquery-3.2.1.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+   <div style="width:96%;">
+	   <nav style="position: absolute;z-index: 1;display: block;">
+	         <div class="navgation-bar">
+		              <div class="div1 nav-mg-left">
+				          <a><span id="nav-span">全部商品</span></a>
+				     </div>
+				      <div class="div1">
+				          <a><span id="nav-color">首页</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">领券中心</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">值得买</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">葡萄酒馆</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">洋酒馆</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">老酒</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">清仓</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">新品</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">CLUB会员</span></a>
+				     </div>
+				 <div class="div2">
+				          <img src="screenshots/imgs/nav-bar.gif">
+				     </div>
+				     
+		     </div>
+	   </nav>
+	    <div class="win-nav-right-pic">
+			<div id="win-nav-right-pic-iframe">
+			 <iframe src="<%=path %>/qiantai/lunbo/lunbo.jsp" id="frame1" frameborder="0" scrolling="no" height="200px" ></iframe>
+				
+			</div>
+			  <div id="win-bar1">
+			     <img src="<%=path %>/screenshots/imgs/win-right-bar1.jpg" id="nav-right-img">
+			  </div>
+			 <div id="win-bar2">
+			     <img src="<%=path %>/screenshots/imgs/win-right-bar2.jpg" id="nav-right-img">
+			  </div>
+			 <div id="win-bar3">
+			     <img src="<%=path %>/screenshots/imgs/win-right-bar3.jpg" id="nav-right-img">
+			  </div>
+			
+			
+		 </div>
+ 
+</div>	  
+</body>
+</html>

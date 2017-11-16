@@ -1,0 +1,249 @@
+#w_top{
+	width: 100%;
+	height: 25px;
+	background-color: whitesmoke;
+	position: absolute;
+}
+#w_distance{
+	padding-top: 5px;
+    float: left;
+    
+	
+}
+#w_distance a{
+	text-decoration: none;
+	color: black;
+}
+#w_distance a:hover{
+	color: red;
+}
+.w_distance2{
+	 margin-left: 7%;
+}
+.w_distance3{
+	margin-left: 5px;
+}
+#w_distance3{
+	margin-left: 5px;
+}
+.w_distance4{
+	 margin-left: 10%;
+	position: relative;
+	
+}
+.sapn1{
+	color: gray;
+} 
+span{
+	font-size: 90%;
+    color: white;
+}
+.span3{
+	color: red;
+}
+.dropbtn{
+   border:none;
+  background-color:whitesmoke ;
+  margin-left: 120px;
+	
+}
+.w_distance4 .dropbtn span:hover{
+	color: red;
+}
+.w_distance4 .dropbtn:hover #triganle{ 
+	transform:rotateZ(180deg);
+}
+.drop-content{
+	display:none;
+    position: absolute;
+	background-color: gray;
+	width:100px;
+	height:70px;
+	margin-left:100px;
+	
+}
+.drop-content a{
+	color: black;
+	 padding-left: 5px;
+	 text-decoration: none;
+	 display: block;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.w_distance4:hover .drop-content{
+	display: block;
+}
+.drop-content a span:hover{
+	color: red;
+}
+#span2 a{
+	color: gray;
+}
+#triganle{
+	 width:0;
+    height:0;
+    border-width:0 5px 5px;
+    border-style:solid;
+    border-color:transparent transparent #333;
+    margin:0px 0px;
+    position:relative;
+	float: right;
+	margin-top: 4px;
+	
+}
+.car_logo{
+	width:15px;
+	height: 15px;
+	
+}
+.left{
+	float: left;
+	
+}
+#border{
+	
+		padding: 0px 5px 0px 5px;
+}
+#phone{
+	width:5px;
+	height: 6px;
+	text-align:center;
+	
+	border-style:double
+}
+#bac_red{
+	background-color: red;
+}
+.nav_logo{
+	margin-top: 2px;
+	
+	width:2px;
+	height:2px;
+	background-color: red;
+	border-radius: 180px;
+	
+}
+.nav_tiao{
+	
+	margin-top: 2px;
+    margin-left: 2px;
+	width:8px;
+	height:2px;
+	background-color: red;
+}
+.a1{
+	display: inline-grid;
+	position: absolute;
+	float: left;
+}
+.triganle_tran{
+    margin-left: 135px;
+}
+.nav{
+	position: relative;
+	display: inline-block;
+	margin-top: 5px;
+}
+.btn{
+   border: none;
+   background-color:whitesmoke;
+}
+.content{
+	display: none;
+	position: absolute;
+	background-color:gray;
+	width:180px;
+	height: 240px;
+	box-shadow: 0px,8px,16px,0px rgba(0,0,0,0.2);
+}
+.margin-left{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.a{
+	padding-left: 10px;
+    margin-top: 5px;
+}
+.padding-left{
+	padding-left: 10px;
+}
+a{
+	border: none;
+	text-decoration: none;
+}
+a span:hover{
+	color: red;
+}
+.nav:hover .content{
+	display: block;
+	
+}
+.nav:hover .btn .left span{
+	color: red;
+}
+.nav .btn:hover #triganle{ 
+	transform:rotateZ(180deg);
+}
+.cus-3{
+	display: inline-block;
+	position: relative;
+	
+    
+}
+.button-3{
+	border:none;
+  background-color:whitesmoke;
+   
+   
+}
+.con3{
+	display: none;
+	position: absolute;
+	padding: 0 10px 0 10px;
+    background-color: black;
+	background-color:gray;
+	height: 90px; 
+	
+}
+.pd-top{
+	
+	padding-top: 10px;
+	
+}
+.cus-3:hover .con3{
+	display: block;
+}
+#img1{
+	width:18px;
+}
+.cus-3:hover .button-3 span{
+	color: red;
+}
+.cus-3:hover .button-3 #triganle{
+	transform: rotateZ(180deg);
+}
+.parent{
+	display:block;
+	min-width: 1366px;
+}
+.parent > div{
+	display: inline;
+	
+}
+#a{
+	 display:inline; 
+      position: relative;
+    
+}
+#nav{
+	position:absolute;
+	margin-top: 5px;
+	
+	float: left;
+}
+.mg-top{
+   float: left;
+}
+.pho{
+	background-color:red;
+}

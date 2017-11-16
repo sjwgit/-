@@ -1,0 +1,198 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <%
+      String path = request.getContextPath();
+    System.out.println(path);
+    %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="<%=path %>/screenshots/css/style.css">
+<link  rel="stylesheet" href="<%=path %>/screenshots/css/login.css">
+<script type="text/javascript" src="<%=path %>/screenshots/js/jquery-3.2.1.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+   <div id="w_top" class="parent">
+		   <div id="w_distance" class="w_distance2">
+			          <span class="sapn1">欢迎来到国酒网!</span>
+			    </div>
+			    <div id="w_distance" class="w_distance3">
+			          <span><a href="<%=path%>/register.jsp">请登录</a></span>
+			    </div>
+			    <div id="w_distance" class="w_distance3">
+			          <span ><a href="#">免费注册</a></span>
+			    </div>
+		  
+		     
+		     <div>
+		         <div id="w_distance" class="w_distance4">
+			           <button class="dropbtn">		 
+					   <div class="left">
+					       <span class="sapn1">我的国酒</span>    
+						         <div id="triganle"></div>
+					   </div> 			   
+					</button>
+					
+					  <div>
+					      <div class="drop-content">
+					      <a href="#"><span class="pd-top">我的订单</span></a>
+					      <a> <span class="pd-top" >物流跟踪</span></a>
+						   <a><span class="pd-top">我的优惠券</span></a>
+						    
+					      </div>
+					  </div>
+			    </div>
+		      
+		     </div>
+		      
+		      <div id="w_distance">
+			      <span class="span3">意见箱</span>
+			   </div>
+			   <div id="w_distance" class="w_distance3">
+			        <div class="left">
+				       <img src="<%=path %>/screenshots/imgs/car.png" class="car_logo">
+				   </div>
+				    <div class="left">
+				     <a href="#"><span class="sapn1" >购物车<span class="span3">0</span>件</span></a>
+				   </div>
+				  <!--   <div class="left" id="w_distance3">
+				      <span class="span3">CLUB会员</span>
+				   </div> -->
+				  <!--  <div class="left" id="w_distance3">
+				      <a href="#"><span class="sapn1">|&nbsp;招商入住&nbsp;|</span></a>
+				   </div> -->
+				   <div class="left pho" id="w_distance3">
+					       <div class="left  ps" id="border">
+					          <div id="phone"></div> 
+					        </div>
+					      <div  class="left" id="border">
+					         <span>手机国酒</span>
+			              </div>  		   
+			   </div> 
+			 </div> 
+			   
+		     <div>
+		      <div class="nav">
+			      <button class="btn">
+					    
+					  <div class="mg-top">
+				      
+					          <div>
+							     <div class="nav_logo" style="float: left;" ></div> 
+								 <div class="nav_tiao"></div>
+							  </div>
+							   <div>
+							     <div class="nav_logo" style="float: left;"></div> 
+								 <div class="nav_tiao"></div>
+							  </div>
+					           <div>
+							     <div class="nav_logo" style="float: left;"></div> 
+								 <div class="nav_tiao"></div>
+							  </div>
+					  
+				  </div>
+					  
+	        <div class="left">
+					        <span class="sapn1">网站导航</span>
+					      </div>
+					       <div class="left">
+					           <div id="triganle"></div>
+					      </div> 
+				  </button>  	  
+				  <div>
+			      <div class="content">
+				         <div class="margin-left">
+					       <span class="span3">购物</span>
+					         <div class="a">
+							    <a href="#"><span>白酒</span></a>
+								 <a href="#" class="padding-left"><span>葡萄酒</span></a>
+								 <a href="#"> <span class="padding-left">洋酒</span></a>
+							 </div>
+							  <div class="a">
+							    <a href="#"><span>啤酒</span></a>
+								 <a href="#" class="padding-left"><span>保健酒</span></a>
+								 <a href="#"> <span class="padding-left">黄酒</span></a>
+							 </div>
+					     </div>
+					    <div class="margin-left">
+					       <span class="span3">活动</span>
+					         <div class="a">
+							    <a href="#"><span>进口馆</span></a>
+								 <a href="#" class="padding-left"><span>整箱套装</span></a>
+								 <a href="#"> <span class="padding-left">清仓</span></a>
+							 </div>
+							  <div class="a">
+							    <a href="#"><span>闪团</span></a>
+								 <a href="#" class="padding-left"><span>精品发现</span></a>
+								 <a href="#"> <span class="padding-left">值得买</span></a>
+							 </div>
+					     </div>
+					    <div class="margin-left">
+					       <span class="span3">其它</span>
+					         <div class="a">
+							    <a href="#"><span>会员中心</span></a>
+								 <a href="#" class="padding-left"><span>社区</span></a>
+								 <a href="#"> <span class="padding-left">常见问题</span></a>
+							 </div>
+							  <div class="a">
+							    <a href="#"><span>招商入住</span></a>
+							 </div>
+					     </div>
+					     <div class="a">
+					      <span style="float:left;">咨询电话：<span style="color: black;float:left;">15382293005</span></span>
+					  </div>
+				  </div>
+				</div>
+			   </div> 
+		  </div>
+		    <div>
+		     <div class="cus-3">
+			       <button class="button-3">
+					    <div class="left">
+					         <img src="<%=path %>/screenshots/imgs/head.png" id="img1">
+					   </div>
+					 
+					   <div class="left">
+					       <span class="sapn1">客户服务</span>
+						   <div id="triganle"></div>
+					   </div>  
+					 </button>
+					 <div class="con3">
+					       <div class="pd-top">
+						     <a href="#"> <span>常见问题</span></a>
+						 </div>
+						   <div class="pd-top">
+						     <a href="#"> <span>售后服务</span></a>
+						 </div>
+						   <div class="pd-top">
+						     <a href="#"> <span>配送说明</span></a>
+						 </div>
+						
+					 </div>
+			   </div>
+			 </div>	
+			    
+			    <div id="nav">
+			         
+			          <span class="sapn1">客服热线 :</span>
+			        
+			      
+			        <span class="span3">15382293005</span>
+			     
+				  
+			   </div>
+		  
+	   </div>
+	    
+	   <div>
+	      <iframe src="<%=path %>/qiantai/header-bar/shuru.jsp" width="100%"  scrolling="no" height="69px" frameborder="0" style="margin-top:30px;" ></iframe>
+	   </div>
+	      <div>
+	      <iframe src="<%=path %>/qiantai/header-bar/nav-bar.jsp" width="100%"  scrolling="no" frameborder="0" height="500px"  ></iframe>  
+	   </div> 
+	    
+	           
+</body>
+</html>

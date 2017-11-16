@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="screenshots/css/style.css">
+  <link  rel="stylesheet" href="screenshots/css/nav-bar.css">
+<script type="text/javascript" src="screenshots/js/jquery-3.2.1.min.js"></script>
+ <title>win-top</title>
+</head>	 
+  <body>
+	  <div style="width:96%;">
+	   <nav style="position: absolute;z-index: 1;display: block;">
+	         <div class="navgation-bar">
+		              <div class="div1 nav-mg-left">
+				          <a><span id="nav-span">全部商品</span></a>
+				     </div>
+				      <div class="div1">
+				          <a><span id="nav-color">首页</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">领券中心</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">值得买</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">葡萄酒馆</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">洋酒馆</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">老酒</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">清仓</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">新品</span></a>
+				     </div>
+				 <div class="div1">
+				          <a><span id="nav-color">CLUB会员</span></a>
+				     </div>
+				 <div class="div2">
+				          <img src="screenshots/imgs/nav-bar.gif">
+				     </div>
+				     
+		     </div>
+	   </nav>
+	    <div class="win-nav-right-pic">
+			<div id="win-nav-right-pic-iframe">
+			 <iframe src="lunbo.html" id="frame1" frameborder="0" scrolling="no" ></iframe>
+				
+			</div>
+			  <div id="win-bar1">
+			     <img src="screenshots/imgs/win-right-bar1.jpg" id="nav-right-img">
+			  </div>
+			 <div id="win-bar2">
+			     <img src="screenshots/imgs/win-right-bar2.jpg" id="nav-right-img">
+			  </div>
+			 <div id="win-bar3">
+			     <img src="screenshots/imgs/win-right-bar3.jpg" id="nav-right-img">
+			  </div>
+			
+			
+		 </div>
+	          
+			 
+	   
+</div>	  
+ </body>
+	 
+</html>

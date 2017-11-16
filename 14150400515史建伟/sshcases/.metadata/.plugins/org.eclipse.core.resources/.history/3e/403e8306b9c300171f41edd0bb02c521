@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ #font1{
+			 color: red;
+			 font-size: 20px;
+		 }
+</style>
+
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+var i=500;
+function tiaozhuan(){
+	 document.getElementById("time").innerHTML= "<span id='font1'>"+i+"</span>"+"秒之后自动跳转奥前一页面";
+	  i= i-1;
+	  if(i <0){
+		  window.history.back();
+	  }
+	  setTimeout('tiaozhuan()',1000);
+}
+</script>
+<body onload="tiaozhuan()">
+       <s:debug></s:debug>
+     <div style="margin-left: 50%; margin-top: 10%;">
+      <div>
+        <span style="font-size: 25px; color: red;"><s:property value="message"/></span> 
+      </div>
+       <div style="margin-left:-50px;">
+         <span id="time"></span>
+       </div>
+         <div><img alt="图p片" src="gifs/timg.gif"></div>
+       </div>
+</body>
+</html>

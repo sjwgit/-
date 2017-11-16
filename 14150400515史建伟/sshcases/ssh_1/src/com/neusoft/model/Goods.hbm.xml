@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-8 10:39:34 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.neusoft.model.Goods" table="GOODS">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="ghs" type="java.lang.String">
+            <column name="GHS" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="upImgFileName" type="java.lang.String">
+            <column name="UPIMGFILENAME" />
+        </property>
+        <property name="goodsDesc" type="java.lang.String">
+            <column name="GOODSDESC" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="PRICE" />
+        </property>
+        <property name="nums" type="java.lang.Integer">
+            <column name="NUMS" />
+        </property>
+        <property name="palate" type="java.lang.String">
+            <column name="PALATE" />
+        </property>
+        <property name="degree" type="java.lang.String">
+            <column name="DEGREE" />
+        </property>
+        <property name="salePrice" type="java.lang.Double">
+            <column name="SALEPRICE" />
+        </property>
+    </class>
+</hibernate-mapping>

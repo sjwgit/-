@@ -1,0 +1,11 @@
+#formcss{
+	width: 85%;
+	height: 50%;
+    margin-left: 30%;
+    margin-top: 10%;
+	
+}
+#tablecss{
+	margin-left: 30%;
+	
+}

@@ -1,0 +1,18 @@
+#formcss{
+	width: 85%;
+	height: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+	
+}
+#tablecss{
+	
+	
+}
+input{
+	width:300px;
+}
+#sub{
+	width:40px;
+	margin-left:10%;
+}

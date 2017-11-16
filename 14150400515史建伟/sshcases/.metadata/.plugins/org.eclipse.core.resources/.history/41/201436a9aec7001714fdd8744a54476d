@@ -1,0 +1,60 @@
+
+/*--------------SLIDER----------------*/
+
+#slider {
+	width: 1000px;
+	
+
+}
+#a li{
+ border-style: dashed;
+}
+#a li img{
+	width: 260px;
+	height: 150px;
+	border-style: groove;
+	border-width: 2px;
+}
+
+/*--------------CONTROLS--------------*/
+
+/*position controls*/
+.controls li {
+	top: 50%;
+	margin-top: -30px
+}
+
+.controls li:nth-child(1) {
+	left: 0;
+}
+
+.controls li:nth-child(2) {
+	right: 0;
+}
+
+
+.pagination{
+ 
+}
+.pagination li {
+	background-color: red;
+    
+} 
+
+.pagination li.active {
+	background-color: #000;
+}
+
+
+/*-------------HELPERS----------------*/
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

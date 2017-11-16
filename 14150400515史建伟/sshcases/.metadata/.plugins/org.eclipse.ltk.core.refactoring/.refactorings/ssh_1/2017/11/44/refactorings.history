@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.neusoft.action.Manage&apos; to &apos;ManageAction&apos;&#x0D;&#x0A;- Original project: &apos;ssh_1&apos;&#x0D;&#x0A;- Original element: &apos;com.neusoft.action.Manage&apos;&#x0D;&#x0A;- Renamed element: &apos;com.neusoft.action.ManageAction&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Manage&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.neusoft.action{Manage.java[Manage" matchStrategy="1" name="ManageAction" qualified="false" references="true" similarDeclarations="false" stamp="1509516792886" textual="false" version="1.0"/>
+</session>

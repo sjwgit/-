@@ -1,0 +1,80 @@
+package com.neusoft.action;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+import org.apache.struts2.interceptor.RequestAware;
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.nesoft.service.ManageService;
+import com.neusoft.model.UserInfo;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+import com.opensymphony.xwork2.Preparable;
+import com.sun.java.swing.plaf.windows.resources.windows;
+
+public class ManageAction extends ActionSupport implements ModelDriven<UserInfo>,Preparable,RequestAware,SessionAware {
+    public Map<String, Object> request;
+    private Map<String, Object> session;
+    private UserInfo userInfo;
+    private ManageService manageService;
+    public void setManageService(ManageService manageService) {
+		this.manageService = manageService;
+	}
+	@Override
+	public void setSession(Map<String, Object> arg0) {
+		// TODO Auto-generated method stub
+		this.session=arg0;
+	}
+
+	@Override
+	public void setRequest(Map<String, Object> arg0) {
+		// TODO Auto-generated method stub
+		this.request=arg0;
+	}
+     public String findUser(){
+    	 List<UserInfo> userInfos = new ArrayList<UserInfo>();
+    	 userInfos =  manageService.select();
+    	 request.put("userInfos", userInfos);
+    	 session.put("userInfos", userInfos);
+    
+    	  return "success";
+     }
+   
+     public String delOne( ){
+    	HttpServletRequest request2 = ServletActionContext.getRequest();
+    	 String idstr =  request2.getParameter("id");
+    	 String name = request2.getParameter("name");
+    	 String tableName = request2.getParameter("tableName");
+    	  long id = Integer.parseInt(idstr);
+    	  int result =  manageService.delete(id, name);
+    	  System.out.println(result);
+    	   
+		  if(result == 1){
+			  List<UserInfo> userInfos = new ArrayList<UserInfo>();
+		    	 userInfos =  manageService.select();
+		    	 request.put("userInfos", userInfos);
+			  return "success";
+		  }else{
+			  return "input";
+		  }   	 
+     }
+	@Override
+	public void prepare() throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public UserInfo getModel() {
+		// TODO Auto-generated method stub
+		return userInfo;
+	}
+  
+}

@@ -1,0 +1,37 @@
+package com.neusoft.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.RequestAware;
+
+import com.nesoft.service.ManageService;
+import com.neusoft.model.Goods;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+import com.opensymphony.xwork2.Preparable;
+
+public class GoodsAction extends ActionSupport implements Preparable,ModelDriven<Goods>,RequestAware{
+    private ManageService manageService;
+    private Map<String, Object> request;
+    public void setManageService(ManageService manageService) {
+		this.manageService = manageService;
+	}
+	@Override
+	public void setRequest(Map<String, Object> arg0) {
+		// TODO Auto-generated method stub
+		this.request=arg0;
+	}
+
+	@Override
+	public Goods getModel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void prepare() throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

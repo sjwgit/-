@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="screenshots/css/style.css">
+ <link rel="stylesheet" href="screenshots/css/sys.css">
+ <link rel="stylesheet" href="screenshots/css/manage.css">
+<script type="text/javascript" src="screenshots/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="screenshots/js/admin-aside-bar.js"></script>
+<title>Insert title here</title>
+</head>
+<body>        
+     <table border="1" cellpadding="0" cellspacing="0" >
+		    <tr>
+			  <td colspan="10" ><span id="title1">客户信息</span></td>
+			</tr>
+			<tr>
+			   <th>ID</th>
+			    <th>客户名</th>
+			     <th>昵称</th>
+			      <th>性别</th>
+			       <th>邮箱</th>
+			        <th>爱好</th>
+			         <th>所在地</th>
+			          <th>身份证号</th>
+			           <th>籍贯</th>
+			            <th><a>删除</a></th>
+			</tr>
+			 <s:iterator value="#request.userInfos" id="user">
+			    <tr>
+			      <td><s:property value="#user.id"/></td>
+			      <td><s:property value="#user.user_name"/></td>
+			      <td><s:property value="#user.name"/></td>
+			      <td><s:property value="#user.sex"/></td>
+			      <td><s:property value="#user.email"/></td>
+			      <td><s:property value="#user.interests"/></td>
+			      <td><s:property value="#user.city"/></td>
+			      <td><s:property value="#user.idCard"/></td>
+			      <td><s:property value="#user.jiguan"/></td>
+			      <td><a onclick="dele(this)" id="${user.id}" name="${user.user_name }" >删除</a></td>
+			     
+			    </tr>
+			 </s:iterator>
+			</table>
+</body>
+</html>

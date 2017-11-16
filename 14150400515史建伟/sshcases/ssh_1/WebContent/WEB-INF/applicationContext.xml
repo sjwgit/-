@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" 	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd   
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+		 <!--导入外部资源包  -->
+		<context:property-placeholder location="classpath:db.properties"/>
+	    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+	        <property name="user" value="${jdbc.username}"></property>
+	        <property name="password" value="${jdbc.password}"></property>
+	        <property name="jdbcUrl" value="${jdbc.url}"></property>
+	        <property name="driverClass" value="${jdbc.driverClass}"></property>
+	       
+	        <property name="initialPoolSize" value="${jdbc.initialPoolSize}"></property>
+	        <property name="maxPoolSize" value="${jdbc.maxPoolSize}"></property>
+	    </bean>
+	     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	          <property name="dataSource" ref="dataSource"></property>
+	        <property name="configLocations" value="classpath:hibernate.cfg.xml"></property>
+	          <property name="mappingResources">
+	              <list>
+	                  
+	                  <value>com/neusoft/model/User.hbm.xml</value>
+	                 <!--  <value>com/neusoft/model/Student.hbm.xml</value> -->
+	                 <value>com/neusoft/model/UserInfo.hbm.xml</value>
+	                 <value>com/neusoft/model/Admin.hbm.xml</value>
+	                  <value>com/neusoft/model/Goods.hbm.xml</value>
+	                  
+	              </list>
+	          </property>
+	          <!-- <property name="hibernateProperties">
+			 <props>
+				<prop key="hibernate.dialect">
+				org.hibernate.dialect.MySQL5InnoDBDialect
+				</prop>
+				
+				<prop key="hibernate.show_sql">
+				     false
+				</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.format_sql">true</prop>	    
+			</props>
+		</property>
+		
+		<property name="mappingResources">
+			<list>
+				<value>com/neusoft/model/Student.hbm.xml</value>
+			</list>
+		</property>    -->
+	      </bean>
+	      <!-- <bean id="student" class="com.neusoft.model.Student" scope="prototype">
+	        <property name="sessionFactory" ref="sessionFactory"></property>
+	     </bean>   -->
+	     <bean id="logRegDao" class="com.nesoft.dao.LogRegDao">
+	         <property name="sessionFactory" ref="sessionFactory"></property>
+	     </bean>
+	     <bean id="manageDao" class="com.nesoft.dao.ManageDao">
+	          <property name="sessionFactory" ref="sessionFactory"></property>
+	     </bean>
+	     <bean id="logRegService" class="com.nesoft.service.LogRegService">
+	         <property name="logRegDao" ref="logRegDao"></property>
+	     </bean>
+         <bean id="manageService" class="com.nesoft.service.ManageService">
+             <property name="manageDao" ref="manageDao"></property>
+         </bean>  
+	     <bean id="studentAction" class="com.neusoft.action.StudentAction" scope="prototype">
+	           <property name="logRegService" ref="logRegService"></property>
+	           <property name="manageService" ref="manageService"></property>
+	     </bean>
+	     <bean id="regAction" class="com.neusoft.action.regAction" scope="prototype">
+	            <property name="logRegService" ref="logRegService"></property>
+	     </bean>
+	     <bean id="selectAction" class="com.neusoft.action.ManageAction" scope="prototype">
+	         <property name="manageService" ref="manageService"></property>
+	     </bean>
+	     <bean id="upImgAction" class="com.neusoft.action.UploadAction" scope="prototype">
+	        <property name="manageService" ref="manageService"></property>
+	     </bean>
+	     <bean id="goodsAction" class="com.neusoft.action.GoodsAction" scope="prototype">
+	        <property name="manageService" ref="manageService"></property>
+	     </bean>
+	     <!-- 配置事物管理器 -->
+	      <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+	        <property name="sessionFactory" ref="sessionFactory"></property>
+	      </bean>
+	      <!-- 配置事物属性 -->
+	      <tx:advice id="txAdvice" transaction-manager="transactionManager">
+	         <tx:attributes>
+	            <tx:method name="*" read-only="true"/>
+	         </tx:attributes>
+	      </tx:advice>
+	      <!--配置事物切点并将并将事物属性与切点连接起来  -->
+	      <aop:config >
+	           <aop:pointcut expression="execution(* com.neusoft.service.*.*(..))" id="txpointcut"/>
+	           <aop:advisor advice-ref="txAdvice" pointcut-ref="txpointcut"/>
+	      </aop:config>
+	     <tx:annotation-driven transaction-manager="transactionManager"/>
+</beans>

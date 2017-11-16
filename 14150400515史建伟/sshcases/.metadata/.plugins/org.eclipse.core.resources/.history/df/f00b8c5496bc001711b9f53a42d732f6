@@ -1,0 +1,56 @@
+$(function(){
+	
+	var $lis = $("li");
+	var $divs = $("ul > div");
+	var index= -1;
+	var nums=0;
+	$lis.bind("click",function(){
+     if(index == $lis.index(this)){
+		  index=$lis.index(this);
+		 $divs.eq(index).removeClass("show");
+		 index = -1;
+	 }else{
+		  $divs.eq(index).removeClass("show");
+		  index=$lis.index(this); 
+		  $divs.eq(index).addClass("show").show;
+	 }	
+	});
+	/*$("#l1").click(function(){
+	
+		document.getElementById("xt-menu").style.display='block';
+			index=$lis.index(this);
+		alert(index);
+	});
+	$("#l2").click(function(){
+	
+		
+			index=$lis.index(this);
+		alert(index);
+	});*/
+	$.ajax({
+		url: "/ssh_1/admin-main-top.jsp",
+		success: function(result){
+		$("#admin-top").html(result);
+	},
+        error: function(msg){
+		 alert("html");
+	}		
+		
+	})
+	 
+})
+
+function xt(event){
+	$.ajax({
+		url: "/ssh_1/System.jsp",
+		success: function(result){
+		alert("success");
+		$(".aside-right").html(result);
+	},
+        error: function(msg){
+		 alert("html");
+	}		
+		
+	})
+	return false;
+}

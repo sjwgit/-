@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.nesoft.service.LogRegService"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="org.apache.catalina.core.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.util.ValueStackFactory"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.util.ValueStack"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.validator.validators.FieldValidatorSupport"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.validator.ValidationException"/>
+<fullyQualifiedTypeName name="javax.crypto.CipherInputStream"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionContext"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.ServletSecurity"/>
+<fullyQualifiedTypeName name="com.neusoft.model.User"/>
+<fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
+<fullyQualifiedTypeName name="com.nesoft.dao.LogRegDao"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="com.neusoft.model.Admin"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.neusoft.model.UserInfo"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+<fullyQualifiedTypeName name="com.neusoft.inter.ManageInter"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.nesoft.dao.ManageDao"/>
+<fullyQualifiedTypeName name="com.sun.java.swing.plaf.windows.resources.windows"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serializer.SerializationHandler"/>
+<fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
+<fullyQualifiedTypeName name="org.apache.struts2.components.File"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.Preparable"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ModelDriven"/>
+<fullyQualifiedTypeName name="org.apache.struts2.interceptor.RequestAware"/>
+<fullyQualifiedTypeName name="com.nesoft.service.ManageService"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.neusoft.model.Goods"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.apache.struts2.ServletActionContext"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+</qualifiedTypeNameHistroy>

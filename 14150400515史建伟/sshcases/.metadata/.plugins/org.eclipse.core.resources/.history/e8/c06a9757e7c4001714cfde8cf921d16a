@@ -1,0 +1,47 @@
+package com.nesoft.service;
+import java.util.List;
+
+import org.springframework.transaction.annotation.Transactional;
+
+import com.nesoft.dao.ManageDao;
+import com.neusoft.model.Goods;
+import com.neusoft.model.UserInfo;
+@Transactional
+public class ManageService{
+  private ManageDao manageDao;
+  public void setManageDao(ManageDao manageDao) {
+	this.manageDao = manageDao;
+  }
+
+public int update(String username,long pass) {
+	// TODO Auto-generated method stub
+	 return manageDao.update(username,pass);
+	 
+}
+
+public void insert( Goods goods) {
+	// TODO Auto-generated method stub
+	 manageDao.insert(goods);
+}
+
+public void delete() {
+	// TODO Auto-generated method stub
+	
+}
+
+public List<UserInfo> select() {
+	// TODO Auto-generated method stub
+	return  manageDao.select();
+}
+public String select(Goods goods){
+	return manageDao.select(goods);
+}
+public int delete(long id, String name) {
+	// TODO Auto-generated method stub
+	return  manageDao.delete(id, name);
+}
+ public List<Goods> findAll(){
+	 return null;
+ }
+ 
+}

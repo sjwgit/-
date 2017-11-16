@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+       <!-- 不需要重启Tomcat服务器即可加载struts.xml文件 -->
+      <constant name="struts.devMode" value="true"></constant> 
+      <constant name="struts.multipart.maxSize" value="1000000000"/>
+      <package name="default" namespace="/" extends="struts-default">
+        <interceptors>
+             <interceptor-stack name="sshStack">
+                <interceptor-ref name="paramsPrepareParamsStack">
+                 <param name="prepare.alwaysInvokePrepare">false</param>
+                </interceptor-ref>
+                
+             </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="sshStack"></default-interceptor-ref>
+         <action name="houtai-*" class="studentAction" method="{1}">
+           <result name="input">/register.jsp</result>
+           <result name="{1}">/houtai/{1}.jsp</result>
+           <result name="update">/houtai/login.jsp</result>
+         </action>
+         <action name="reg" class="regAction" method="register">
+             <result name="success">/login.jsp</result>
+             <result name="input">/register.jsp</result>
+         </action>
+         <action name="select-*" class="selectAction" method="{1}">
+             <result name="delOne">/houtai/manage-customer/manage-customer.jsp</result>
+             <result name="success">/houtai/manage-customer/manage-customer.jsp</result>      
+         </action>
+         <action name="uploadImg" class="upImgAction" method="uploadImg">
+               <interceptor-ref name="paramsPrepareParamsStack">
+                <param name="fileUpload.maximumSize">500000000</param>
+                <param name="fileUpload.allowedTypes">text/plain,application/vnd.ms-powerpoint,image/gif,image/bmp,image/jpeg</param>
+                <param name="fileUpload.allowedExtensions">.txt,.ppt,.gif,.png,.jpg</param>
+              </interceptor-ref>
+              <result name="success"></result>
+              <result name="input"></result>
+         </action>
+      </package>
+</struts>

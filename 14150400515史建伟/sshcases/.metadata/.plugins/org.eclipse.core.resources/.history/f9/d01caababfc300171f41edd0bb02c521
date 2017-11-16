@@ -1,0 +1,143 @@
+$(function(){
+	
+	var $lis = $("li");
+	var $divs = $("ul > div");
+	var index= -1;
+	var nums=0;
+	$lis.bind("click",function(){
+     if(index == $lis.index(this)){
+		  index=$lis.index(this);
+		 $divs.eq(index).removeClass("show");
+		 index = -1;
+	 }else{
+		  $divs.eq(index).removeClass("show");
+		  index=$lis.index(this); 
+		  $divs.eq(index).addClass("show").show;
+	 }	
+	});
+	/*$("#l1").click(function(){
+	
+		document.getElementById("xt-menu").style.display='block';
+			index=$lis.index(this);
+		alert(index);
+	});
+	$("#l2").click(function(){
+	
+		
+			index=$lis.index(this);
+		alert(index);
+	});*/
+	$.ajax({
+		url: "/ssh_1/houtai/admin-main-top.jsp",
+		success: function(result){
+		$("#admin-top").html(result);
+	},
+        error: function(msg){
+		 alert("html");
+	}		
+		
+	})
+	 
+})
+
+function xt(event){
+	$.ajax({
+		url: "/ssh_1/houtai/sys-inform/System.jsp",
+		success: function(result){
+		$(".aside-right").html(result);
+	},
+        error: function(msg){
+		 alert(msg);
+	}		
+		
+	})
+	return false;
+}
+function pass(event){
+	$.ajax({
+		url: "/ssh_1/houtai/pass/password.jsp",
+		success: function(result){
+		$(".aside-right").html(result);
+	},
+        error: function(msg){
+		 alert(msg);
+	}		
+		
+	})
+	return false;
+}
+function customer(event){
+	$.ajax({
+		
+		url: "select-findUser.action",
+		success: function(result){
+			$(".aside-right").html(result);
+		},
+		error: function(msg){
+			alert(msg);
+		}
+	})
+	
+	return false;
+}
+function  selectAll(event) {
+	window.location.href="select-findUser.action";
+}
+function tijiao(event){
+	var newpass = $("#password2").val();
+	var pass2 = $("#password1").val();
+	var pass1= $("#pass").val();
+	if(pass1 != pass2){
+		document.getElementById("error-pass").innerHTML="原始密码错误";
+		
+		return false;
+	}else if(newpass == ""){
+		document.getElementById("new-pass").innerHTML="请填写新密码";
+	}else{
+		window.event.returnValue = true;
+	}
+	
+}
+function dele(obj){
+	if(confirm("您确定要删除客户："+obj.name+"?")){
+		$.ajax({
+			
+			url: "select-delOne.action?id="+obj.id+"&name="+obj.name,
+			success: function(result){
+				$(".aside-right").html(result);
+			},
+			error: function(msg){
+				alert(msg);
+			}
+		})
+		  return false;
+	   }
+}
+function goodsMan(obj){
+	$.ajax({
+		
+		url:"/ssh_1/houtai/manage-goods.jsp",
+		success: function(result){
+			$(".aside-right").html(result);
+		},
+		error: function(msg){
+			alert(msg);
+		}
+	})
+}
+function submit1(obj){
+	window.event.returnValue = false;
+	 $(function(){
+		  var goodsDesc =$("#goodsDesc").val();
+		  var price =$("#price").val();
+		  var nums =$("#nums").val();
+		  var ghs =$("#ghs").val();
+		  var address =$("#address").val();
+		
+		  if(goodsDesc == ""){
+			   alert("dfdfd");
+			  
+		  }
+	  })
+	 return false;
+}
